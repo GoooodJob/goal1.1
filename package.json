@@ -1,0 +1,10 @@
+{
+	"name": "nodejs-console",
+	"version": "0.0.0",
+	"main": "./out/main.js",
+	"scripts": {
+		"watch": "tsc -w",
+		"build": "tsc"
+	},
+	"dependencies": {}
+}
