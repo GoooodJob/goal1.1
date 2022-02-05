@@ -6,5 +6,7 @@
 		"watch": "tsc -w",
 		"build": "tsc"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"express": "^4.17.2"
+	}
 }
