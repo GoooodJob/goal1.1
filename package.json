@@ -1,10 +1,13 @@
 {
 	"name": "nodejs-console",
 	"version": "0.0.0",
-	"main": "./out/main.js",
+	"main": "./src/sever.js",
 	"scripts": {
 		"watch": "tsc -w",
-		"build": "tsc"
+		"build": "tsc",
+		"start": "node ./src/server.js"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"express": "^4.17.2"
+	}
 }
