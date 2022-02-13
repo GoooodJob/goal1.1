@@ -1,11 +1,12 @@
 {
 	"version": "0.2.0",
 	"configurations": [
+
 		{
 			"name": "启动",
 			"type": "node",
 			"request": "launch",
-			"program": "${workspaceRoot}/out/main.js",
+			"program": "${workspaceRoot}/src/server.js",
 			"stopOnEntry": false,
 			"args": [],
 			"cwd": "${workspaceRoot}",
