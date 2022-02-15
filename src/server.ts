@@ -1,6 +1,9 @@
-var express = require('express');
+import * as express from 'express'
 
-var app = express();
+const app = express();
+const port: number = 3000;
+
+app.get('/', function (req, res) {res.end('Welcome Home!');})
 
 app.get('/helloworld', function (req, res) {
     console.log('Some shabi requested helloworld service!')
@@ -11,6 +14,6 @@ app.get('/helloworld', function (req, res) {
 //     res.end('Hello World!\nHello World!')
 //  })
 
-app.listen(8080, function () {
-   console.log("Server listening at 127.0.0.1:8080")
+app.listen(port, () => {
+    console.log(`App listening on the http://localhost:${port}`)
 })

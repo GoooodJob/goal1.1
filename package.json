@@ -1,12 +1,19 @@
 {
 	"name": "nodejs-console",
 	"version": "0.0.0",
-	"main": "./out/main.js",
+	"main": "./dist/server.js",
 	"scripts": {
 		"watch": "tsc -w",
-		"build": "tsc"
+		"build": "tsc -p",
+		"dev": "nodemon ./src/server.ts"
 	},
 	"dependencies": {
-		"express": "^4.17.2"
+		"@types/express": "^4.17.13",
+		"@types/node": "^17.0.17"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15",
+		"ts-node": "^10.5.0",
+		"typescript": "^4.5.5"
 	}
 }
