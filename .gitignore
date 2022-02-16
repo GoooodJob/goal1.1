@@ -1,6 +1,5 @@
 ### VS Code ###
-.vscode/*
-
+.vscode/
 
 ### JS ###
 node_modules

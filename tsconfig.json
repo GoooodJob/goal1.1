@@ -1,15 +1,15 @@
 {
-	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
-		"watch": true,
-		"sourceMap": true,
-		"outDir": "./out",
-		"experimentalDecorators": true,
-		"lib": [
-            "es5",
-            "dom",
-            "es2015.promise"
-        ]
-	}
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "baseUrl": "./src"
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }
