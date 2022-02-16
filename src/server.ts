@@ -1,18 +1,27 @@
-import * as express from 'express'
+import { Request, Response, Application } from 'express'
+import express = require('express');
 
 const app = express();
-const port: number = 3000;
+const port = process.env.PORT || 3000;
 
-app.get('/', function (req, res) {res.end('Welcome Home!');})
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.get('/helloworld', function (req, res) {
-    console.log('Some shabi requested helloworld service!')
+app.get('/', function (req: Request, res: Response) {res.end('Welcome Home!');})
+
+app.get('/api/helloworld', function (req, res) {
+    console.log('Someone requested the helloworld endpoint at ' + new Date())
     res.end('Hello World!')
 })
 
-// app.get('/helloworldx2', function (req, res) {
-//     res.end('Hello World!\nHello World!')
-//  })
+app.post('/api/addition', function (req: Request, res: Response) {
+    const a: number = +req.body.a
+    const b: number = +req.body.b
+    const sum: number = a + b
+
+    console.log(new Date() + ` - Addtion of ${a} plus ${b} is called`)
+    res.send({'result': sum}); 
+})
 
 app.listen(port, () => {
     console.log(`App listening on the http://localhost:${port}`)
