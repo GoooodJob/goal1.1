@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as express from 'express'
 
 const app = express();
@@ -17,3 +18,18 @@ app.get('/helloworld', function (req, res) {
 app.listen(port, () => {
     console.log(`App listening on the http://localhost:${port}`)
 })
+=======
+import express = require('express');
+
+const app = express();
+const port = 3000;
+
+app.get('/hello', function (req, res) {
+    console.log('Someone requested helloworld service!')
+    res.end('Hello World!')
+})
+
+app.listen(port, () => {
+    console.log(`App listening on the http://localhost:${port}`)
+}) 
+>>>>>>> 743454b (first commit)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### VS Code ###
 .vscode/
 
@@ -8,4 +9,15 @@ dist
 npm-debug.log
 .cache/
 package-lock.json
+=======
+### VS Code ###
+
+### JS ###
+node_modules
+dist
+.DS_Store
+npm-debug.log
+.cache/
+package-lock.json
+>>>>>>> 743454b (first commit)
 yarn.lock
